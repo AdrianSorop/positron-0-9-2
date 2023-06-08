@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xt:extensions xmlns:xt="http://www.oxygenxml.com/ns/extension"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.oxygenxml.com/ns/extension http://www.oxygenxml.com/ns/extension/extensions.xsd">
+    
+    
+    <xt:extension xmlns:xt="http://www.oxygenxml.com/ns/extension" id="oxygen.ai.positron.addon">
+        <xt:location href="oxygen-ai-positron-addon-0.9.2-plugin.jar"/>
+        <xt:version>0.9.2</xt:version>
+        
+        <!-- Should be the same with the SDK from the Maven dependencies. -->
+        <xt:oxy_version>25.0+</xt:oxy_version>
+        <xt:type>plugin</xt:type>
+        <xt:author>Syncro Soft</xt:author>
+        <xt:name>Oxygen AI Positron Assistant (Experimental)</xt:name>
+        <xt:description>
+            <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <title>Oxygen AI Positron Assistant (Experimental)</title>
+                </head>
+                <body>
+                    <h1>Oxygen AI Positron Assistant (Experimental)</h1>
+                    <div>
+                        <p>This addon uses the Oxygen AI Positron service to help technical documentation writers generate content.</p>
+                    </div>
+                    <div>
+                        <h2>Release Notes 0.9.2</h2>                 
+                        <ol>
+                            <li><b>AI Positron Chat</b> - The <b>AI Positron Chat</b> side view 
+                                presents responses after running each action and allows further refining the responses by discussing with 
+                                the <b>AI Positron</b> platform. You can start a new chat and create your own favorite prompts using 
+                                the supported variables to specify the content which is sent to the platform.
+                                You can choose to insert, preview or copy to clipboard each of the responses.
+                            </li>
+                            <li>Added new actions:
+                                <ul>
+                                    <li><b>Correct Grammar</b> - Correct and enhance the grammar and spelling of the selected content.</li>
+                                    <li><b>Use Active Voice</b> - Convert the selected content from passive voice to active voice.</li>
+                                    <li><b>Generate Questions</b> - Generate questions that are answered by reading the selected text or the entire document content.</li>
+                                    <li><b>Answer Questions</b> - Generate answers to questions you ask based on the selected text or on the entire document content.</li>
+                                </ul>
+                            </li>
+                            <li><b>Validation Quick Fixes</b> - Whenever validation problems are displayed 
+                                in the application <b>Problems</b> list, you can right click a problem and use the 
+                                <b>AI Positron Fix</b> action to ask the AI Positron platform for help in fixing the problem.</li>
+                            <li><b>Custom XPath Functions</b> - The add-on now contributes two XPath extension functions <b>ai:transform-content(instruction, content)</b> and <b>ai:verify-content(instruction, content)</b> which can be used from XSLT stylesheets, XQuery scripts, and from custom Schematron schemas to rephrase process content or to perform validation checks on existing content. Custom XML refactoring operations based on XSLT or XQuery update can also take advantage of these AI functions, so you can apply also batch processing on multiple documents.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <h2>Release Notes 0.9.1</h2>                 
+                        <ol>
+                            <li>Enhanced internal functionality to effectively manage upcoming modifications in the authentication methods of the Oxygen AI Positron service.</li>
+                        </ol>
+                    </div>
+                    <div>
+                        <br/>
+                        <h2>Release Notes 0.9.0</h2>
+                        <h3>Connect to the Oxygen AI Positron service and use the AI Assistant to generate content or check your existing content.</h3>
+                        <ol>
+                            <li><b>Continue Writing</b> - Continues the idea in the current paragraph by generating extra content.</li>
+                            <li><b>Follow Instructions</b> - Replaces the selected instructions with content generated based on them. </li>
+                            <li><b>Improve Readability</b> - Improves the readability and corrects spell check problems in the selected content, while preserving its original XML markup.</li>
+                            <li><b>Generate Topic</b> - Generates a DITA XML topic starting from some ideas entered in a configuration dialog box.</li>
+                            <li><b>Short Description</b> - Generates a short description ('shortdesc' element) based on a summary of the selected text.</li>
+                            <li><b>Index Terms</b> - Generates a 'keywords' element that contains index terms obtained from the selected text and inserts it in the prolog.</li>
+                            <li><b>Itemize</b> - Converts the content of a selected paragraph into a summary and a list of items.</li>
+                            <li><b>Join Items</b> - Converts a selection that contains a list of items into a single paragraph.</li>
+                            <li><b>Translation: English, German, French, Japanese</b> - The actions translate the selected text to the target language (English, German, French, Japanese), while preserving the original XML markup.</li>
+                            <li><b>Readability</b> - Suggests changes to improve the readability of the selected content.</li>
+                            <li><b>Summarize</b> - Generates a summary of the selected content.</li>
+                        </ol>
+                    </div>
+                </body>
+            </html>
+        </xt:description>
+        <xt:license><![CDATA[
+Oxygen AI Positron Assistant (c) 2023, Syncro Soft SRL, All rights reserved.
+        
+Grant of license. Syncro Soft grants You the non-exclusive right to install and use copies of the Oxygen AI Positron Assistant (the "Add-On") on your computer running a validly licensed copy of Oxygen XML software for which Add-On was designed, with the following conditions:
+    1. Use of Service. You acknowledge that the use of the Add-On requires a connection to Oxygen AI Positron service (the "Service") that is subject to separate conditions, including any subscription requirements. You agree to comply with all applicable terms and conditions of the Service. In the event of any conflict between the terms of this license and the terms of the Service, the terms of the Service shall prevail.
+    2. Beta Quality. You acknowledge that the Add-On is a pre-release version and may contain defects or errors. The Add-On is provided on an "as is" basis, without warranty of any kind, either express or implied, including but not limited to the implied warranties of merchantability and fitness for a particular purpose. You assume all risks associated with the use of the Add-On.
+    3. Warning. You acknowledge that the Add-On may produce inaccurate information about people, places, or facts. You assume all responsibility for verifying any information produced by the Add-On.
+    4. Limitation of Liability. In no event shall the copyright holder or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this Add-On, even if advised of the possibility of such damage.
+    5. Termination. This license automatically terminates if You violate any of its terms and conditions. We may terminate this license at any time without notice to You.
+    
+By using the Add-On, You acknowledge that You have read and understand this license and agree to be bound by its terms and conditions. If You do not agree to the terms of this license, You should not use the Add-On.
+    
+Third Party Software. The Add-On may include certain of the following third party software components. The license terms applicable to such third party software components are listed below:
+    
+java-jwt-4.3.0
+Site: https://github.com/auth0/java-jwt
+License: The MIT License (MIT)
+]]></xt:license>
+        
+    </xt:extension>
+    
+    
+</xt:extensions>
