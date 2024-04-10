@@ -3,4 +3,10 @@
     <context id="NFieRGJethDdmdf" name="Primul meu deliverable">
         <input href="../update-site.xml"/>
     </context>
+    <publication id="pdf" transtype="pdf-css-html5"/>
+    <deliverable id="d-new_deliv-1712763108654" name="new deliv">
+        <context idref="NFieRGJethDdmdf"/>
+        <output href="pdf-output"/>
+        <publication idref="pdf"/>
+    </deliverable>
 </project>
